@@ -7,7 +7,7 @@
 #define __STDC_WANT_LIB_EXT1__ 1
 
 #define _CRT_SECURE_NO_WARNINGS
-#define MAX_SIZE_OF_TASKS 100
+#define MAX_SIZE_OF_TASKS 100  //Maximum number of characters/numbers in char variables is 100
 //struct Tasks
 //Represents a structure of a single task
 //Task consists of an ID, title, description, priority and status
