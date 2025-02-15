@@ -37,7 +37,7 @@ struct Tasks {
 
 FUNCTION DEFINITIONS
 
- ReadFromFile(FILE* file, Task Tasks)
+ -- ReadFromFile(FILE* file, Task Tasks) --
 
     Description: Reads tasks from a file (TASK_MANAGER.txt) and loads them into the linked list.
     Parameters:
@@ -47,7 +47,7 @@ FUNCTION DEFINITIONS
     Details: It reads each line from the file, parses the task data, and adds the task to the list sorted by priority.
 
 
- AddTasksSortedByPriority(int TaskID, char* TaskTitle, char* TaskDescription, int TaskPriority, int isCompleted, Task TaskPosition)
+ -- AddTasksSortedByPriority(int TaskID, char* TaskTitle, char* TaskDescription, int TaskPriority, int isCompleted, Task TaskPosition) --
 
     Description: Adds a new task to the linked list, sorted by priority.
     Parameters:
@@ -61,7 +61,7 @@ FUNCTION DEFINITIONS
     Details: The function creates a new task and inserts it into the linked list in sorted order by priority.
 
 
- isTaskIDUnique(int TaskID, Task TaskUniqueID)
+ -- isTaskIDUnique(int TaskID, Task TaskUniqueID) --
 
     Description: Checks if a task ID is unique (not already used in the list).
     Parameters:
@@ -70,7 +70,7 @@ FUNCTION DEFINITIONS
     Returns: 1 if the ID is unique, 0 if the ID already exists in the list.
 
 
- TaskDisplay(Task DisplayTasks)
+ -- TaskDisplay(Task DisplayTasks) --
     
     Description: Displays all tasks in the terminal.
     Parameters:
@@ -79,7 +79,7 @@ FUNCTION DEFINITIONS
     Details: It iterates over the list of tasks and prints their details to the terminal.
 
 
- DeleteAllTasks(Task DeleteTasks)
+ -- DeleteAllTasks(Task DeleteTasks) --
     
     Description: Deletes all tasks from the task list.
     Parameters:
@@ -88,7 +88,7 @@ FUNCTION DEFINITIONS
     Details: It frees memory for each task in the list.
 
 
- FindTaskPrev(int TaskID, Task FindingTask)
+ -- FindTaskPrev(int TaskID, Task FindingTask) --
 
     Description: Finds the task that precedes a specific task in the list based on the task ID.
     Parameters:
@@ -98,7 +98,7 @@ FUNCTION DEFINITIONS
     Details: Traverses the list to find the task before the one with the matching ID.
 
 
- FindTask(int TaskID, Task FindingTask)
+ -- FindTask(int TaskID, Task FindingTask) --
     
     Description: Finds a task in the list by its ID.
     Parameters:
@@ -108,7 +108,7 @@ FUNCTION DEFINITIONS
     Details: Traverses the task list to find the task with the specified ID.
 
 
- DeleteOneTask(int TaskID, Task DeletingOneTask)
+ -- DeleteOneTask(int TaskID, Task DeletingOneTask) --
 
     Description: Deletes a specific task from the task list.
     Parameters:
@@ -118,7 +118,7 @@ FUNCTION DEFINITIONS
     Details: Finds and deletes a task with the given ID from the list.
 
 
- SaveToFile(FILE* file, Task Tasks)
+ -- SaveToFile(FILE* file, Task Tasks) --
 
     Description: Saves all tasks from the list to a file (TASK_MANAGER.txt).
     Parameters:
@@ -128,7 +128,7 @@ FUNCTION DEFINITIONS
     Details: Iterates over the list of tasks and writes each task’s details to the file.
 
 
- EditTask(int TaskID, Task EditingTask)
+ -- EditTask(int TaskID, Task EditingTask) --
 
     Description: Allows the user to edit an existing task's details (ID, title, description, priority, or status).
     Parameters:
@@ -138,7 +138,7 @@ FUNCTION DEFINITIONS
     Details: Prompts the user for new task details and updates the selected task in the list.
 
     
- SortTasksByPriority(Task TaskSort)
+ -- SortTasksByPriority(Task TaskSort) --
 
     Description: Sorts the tasks in the list by their priority.
     Parameters:
