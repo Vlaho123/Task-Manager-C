@@ -8,31 +8,31 @@ The task manager supports basic operations for managing tasks and persists the t
 
 HEADER FILES
 
-#include<stdio.h>         Standard I/O library for input and output operations.
-#include<stdlib.h>        Standard library for memory allocation and process control.
-#include<string.h>        String manipulation functions.
-#include<malloc.h>        Memory allocation functions (alternative to stdlib.h).
-#include<errno.h>         Provides error codes and related functions.
-#include<stdbool.h>       Defines the `bool` type and true/false constants.
+#include<stdio.h>         //Standard I/O library for input and output operations.
+#include<stdlib.h>        //Standard library for memory allocation and process control.
+#include<string.h>        //String manipulation functions.
+#include<malloc.h>        //Memory allocation functions (alternative to stdlib.h).
+#include<errno.h>         //Provides error codes and related functions.
+#include<stdbool.h>       //Defines the `bool` type and true/false constants.
 
 
 CONSTANTS
 
-#define __STDC_WANT_LIB_EXT1__ 1  Enables some library extensions in some compilers.
-#define _CRT_SECURE_NO_WARNINGS   Disables warnings related to insecure functions in MSVC.
-#define MAX_SIZE_OF_TASKS 100     Maximum size for task-related strings like titles and descriptions.
+#define __STDC_WANT_LIB_EXT1__ 1      //Enables some library extensions in some compilers.
+#define _CRT_SECURE_NO_WARNINGS       //Disables warnings related to insecure functions in MSVC.
+#define MAX_SIZE_OF_TASKS 100         //Maximum size for task-related strings like titles and descriptions.
 
 
 TASK STRUCTURE DEFINITION
 
 typedef struct Tasks *Task;
 struct Tasks {
-    int TaskID;                                 Task ID (unique identifier for the task).
-    char TaskTitle[MAX_SIZE_OF_TASKS];          Task title (name of the task).
-    char TaskDescription[MAX_SIZE_OF_TASKS];    Task description (details of the task).
-    int TaskPriority;                           Task priority (1-High, 2-Medium, 3-Low).
-    int IsCompleted;                            Task completion status (1 for completed, 0 for not completed).
-    Task TaskNext;                              Pointer to the next task in the list.
+    int TaskID;                                 //Task ID (unique identifier for the task).
+    char TaskTitle[MAX_SIZE_OF_TASKS];          //Task title (name of the task).
+    char TaskDescription[MAX_SIZE_OF_TASKS];    //Task description (details of the task).
+    int TaskPriority;                           //Task priority (1-High, 2-Medium, 3-Low).
+    int IsCompleted;                            //Task completion status (1 for completed, 0 for not completed).
+    Task TaskNext;                              //Pointer to the next task in the list.
 };
 
 FUNCTION DEFINITIONS
